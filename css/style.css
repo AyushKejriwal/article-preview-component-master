@@ -1,0 +1,169 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  margin: 0;
+  height: 100%;
+  background-color:  hsl(210, 46%, 95%);
+}
+
+.body-div {
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.image-drawer {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  padding: 1rem 2rem;
+}
+
+.card-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.image-text-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.profile-image .avatar-image {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.bar-text {
+  padding: 10px;
+}
+
+.bar-text p {
+  margin: 0;
+}
+
+
+.social-share {
+  display: none;
+  align-items: center;
+}
+
+.share-text {
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 10px;
+}
+
+.social-icons {
+  padding: 0.75rem;
+}
+
+.social-icons > i {
+  padding: 5px;
+}
+
+.share-container {
+  display: flex;
+
+}
+
+.share-circle {
+  width: 30px;
+  height: 30px;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#triangle-down {
+  display: none;
+}
+
+@media only screen and (min-width: 920px) {
+
+  .container {
+    flex-direction: row;
+
+  }
+
+  .image-drawer {
+    display: block;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .text-container {
+    justify-content: space-around;
+  }
+
+  .social-share {
+    background-color: hsl(217, 19%, 35%);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+
+  }
+
+  .share-text {
+    margin: 0;
+  }
+
+  .drawer-image-container {
+    display: flex;
+  }
+  .social-share {
+    transform: translate(175%, -130%);
+    position: relative;
+
+  }
+
+  .social-icons {
+    padding: 10px;
+  }
+
+  #triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid hsl(217, 19%, 35%);
+  position: relative;
+  transform: translate(710%, -280%);
+}
+
+
+}
